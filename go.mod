@@ -2,6 +2,8 @@ module github.com/hashicorp/gokrb5
 
 go 1.12
 
+replace gopkg.in/jcmturner/gokrb5.v7 => ./
+
 require (
 	github.com/hashicorp/go-uuid v1.0.1
 	github.com/jcmturner/gofork v1.0.0
