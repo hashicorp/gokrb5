@@ -11,11 +11,11 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/hashicorp/gokrb5/iana/nametype"
+	"github.com/hashicorp/gokrb5/test"
+	"github.com/hashicorp/gokrb5/test/testdata"
+	"github.com/hashicorp/gokrb5/types"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/nametype"
-	"gopkg.in/jcmturner/gokrb5.v7/test"
-	"gopkg.in/jcmturner/gokrb5.v7/test/testdata"
-	"gopkg.in/jcmturner/gokrb5.v7/types"
 )
 
 const (

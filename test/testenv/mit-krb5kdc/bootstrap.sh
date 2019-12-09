@@ -29,13 +29,13 @@ cp /vagrant/*.service /etc/systemd/system/
 systemctl enable krb5kdc krb5kdc-resdom krb5kdc-latest krb5kdc-older krb5kdc-shorttickets httpd dns
 
 
-/usr/bin/docker pull jcmturner/gokrb5:http
-/usr/bin/docker pull jcmturner/gokrb5:kdc-centos-default
-/usr/bin/docker pull jcmturner/gokrb5:kdc-resdom
-/usr/bin/docker pull jcmturner/gokrb5:kdc-older
-/usr/bin/docker pull jcmturner/gokrb5:kdc-latest
-/usr/bin/docker pull jcmturner/gokrb5:kdc-shorttickets
-/usr/bin/docker pull jcmturner/gokrb5:dns
+/usr/bin/docker pull hashicorp/gokrb5:http
+/usr/bin/docker pull hashicorp/gokrb5:kdc-centos-default
+/usr/bin/docker pull hashicorp/gokrb5:kdc-resdom
+/usr/bin/docker pull hashicorp/gokrb5:kdc-older
+/usr/bin/docker pull hashicorp/gokrb5:kdc-latest
+/usr/bin/docker pull hashicorp/gokrb5:kdc-shorttickets
+/usr/bin/docker pull hashicorp/gokrb5:dns
 
 
 reboot

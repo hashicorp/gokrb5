@@ -8,7 +8,7 @@ There are two options to run these services.
 
 ## Docker Containers
 The Docker containers can be run with the commands you see in the ```before_install``` section of the 
-[.travis.yml](https://github.com/jcmturner/gokrb5/blob/master/.travis.yml) file.
+[.travis.yml](https://github.com/hashicorp/gokrb5/blob/master/.travis.yml) file.
 You will need to set the environment variable ```TEST_KDC_ADDR``` to "127.0.0.1" when running the integration tests.
 
 ## Vagant VM Instance

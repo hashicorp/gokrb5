@@ -6,15 +6,15 @@ import (
 	"testing"
 	"time"
 
+	"github.com/hashicorp/gokrb5/credentials"
+	"github.com/hashicorp/gokrb5/iana"
+	"github.com/hashicorp/gokrb5/iana/etypeID"
+	"github.com/hashicorp/gokrb5/iana/msgtype"
+	"github.com/hashicorp/gokrb5/iana/nametype"
+	"github.com/hashicorp/gokrb5/iana/patype"
+	"github.com/hashicorp/gokrb5/keytab"
+	"github.com/hashicorp/gokrb5/test/testdata"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v7/credentials"
-	"gopkg.in/jcmturner/gokrb5.v7/iana"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/etypeID"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/msgtype"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/nametype"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/patype"
-	"gopkg.in/jcmturner/gokrb5.v7/keytab"
-	"gopkg.in/jcmturner/gokrb5.v7/test/testdata"
 )
 
 const (

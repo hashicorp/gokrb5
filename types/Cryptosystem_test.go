@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"testing"
 
+	"github.com/hashicorp/gokrb5/iana"
+	"github.com/hashicorp/gokrb5/test/testdata"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v7/iana"
-	"gopkg.in/jcmturner/gokrb5.v7/test/testdata"
 )
 
 func TestUnmarshalEncryptedData(t *testing.T) {

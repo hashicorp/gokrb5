@@ -7,10 +7,10 @@ import (
 	"log"
 	"testing"
 
+	"github.com/hashicorp/gokrb5/keytab"
+	"github.com/hashicorp/gokrb5/test/testdata"
+	"github.com/hashicorp/gokrb5/types"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v7/keytab"
-	"gopkg.in/jcmturner/gokrb5.v7/test/testdata"
-	"gopkg.in/jcmturner/gokrb5.v7/types"
 )
 
 func TestPACTypeVerify(t *testing.T) {

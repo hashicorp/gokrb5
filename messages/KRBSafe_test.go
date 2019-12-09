@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/hashicorp/gokrb5/iana"
+	"github.com/hashicorp/gokrb5/iana/addrtype"
+	"github.com/hashicorp/gokrb5/iana/msgtype"
+	"github.com/hashicorp/gokrb5/test/testdata"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v7/iana"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/addrtype"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/msgtype"
-	"gopkg.in/jcmturner/gokrb5.v7/test/testdata"
 )
 
 func TestUnmarshalKRBSafe(t *testing.T) {

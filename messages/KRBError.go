@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/hashicorp/gokrb5/iana"
+	"github.com/hashicorp/gokrb5/iana/asnAppTag"
+	"github.com/hashicorp/gokrb5/iana/errorcode"
+	"github.com/hashicorp/gokrb5/iana/msgtype"
+	"github.com/hashicorp/gokrb5/krberror"
+	"github.com/hashicorp/gokrb5/types"
 	"github.com/jcmturner/gofork/encoding/asn1"
-	"gopkg.in/jcmturner/gokrb5.v7/iana"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/asnAppTag"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/errorcode"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/msgtype"
-	"gopkg.in/jcmturner/gokrb5.v7/krberror"
-	"gopkg.in/jcmturner/gokrb5.v7/types"
 )
 
 // KRBError implements RFC 4120 KRB_ERROR: https://tools.ietf.org/html/rfc4120#section-5.9.1.

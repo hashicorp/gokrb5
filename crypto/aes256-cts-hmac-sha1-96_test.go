@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"testing"
 
+	"github.com/hashicorp/gokrb5/crypto/common"
+	"github.com/hashicorp/gokrb5/crypto/rfc3962"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v7/crypto/common"
-	"gopkg.in/jcmturner/gokrb5.v7/crypto/rfc3962"
 )
 
 func TestAes256CtsHmacSha196_StringToKey(t *testing.T) {

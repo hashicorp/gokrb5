@@ -8,10 +8,10 @@ import (
 	"math/big"
 	"time"
 
+	"github.com/hashicorp/gokrb5/asn1tools"
+	"github.com/hashicorp/gokrb5/iana"
+	"github.com/hashicorp/gokrb5/iana/asnAppTag"
 	"github.com/jcmturner/gofork/encoding/asn1"
-	"gopkg.in/jcmturner/gokrb5.v7/asn1tools"
-	"gopkg.in/jcmturner/gokrb5.v7/iana"
-	"gopkg.in/jcmturner/gokrb5.v7/iana/asnAppTag"
 )
 
 /*Authenticator   ::= [APPLICATION 2] SEQUENCE  {

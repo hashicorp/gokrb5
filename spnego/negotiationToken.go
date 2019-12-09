@@ -5,12 +5,12 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/hashicorp/gokrb5/client"
+	"github.com/hashicorp/gokrb5/gssapi"
+	"github.com/hashicorp/gokrb5/messages"
+	"github.com/hashicorp/gokrb5/service"
+	"github.com/hashicorp/gokrb5/types"
 	"github.com/jcmturner/gofork/encoding/asn1"
-	"gopkg.in/jcmturner/gokrb5.v7/client"
-	"gopkg.in/jcmturner/gokrb5.v7/gssapi"
-	"gopkg.in/jcmturner/gokrb5.v7/messages"
-	"gopkg.in/jcmturner/gokrb5.v7/service"
-	"gopkg.in/jcmturner/gokrb5.v7/types"
 )
 
 /*
