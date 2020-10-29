@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM docker.mirror.hashicorp.services/centos:latest
 MAINTAINER Jonathan Turner <jt@jtnet.co.uk>
 
 EXPOSE 88
@@ -8,8 +8,8 @@ ENTRYPOINT ["/usr/local/sbin/krb5kdc", "-n"]
 RUN yum install -y \
   tcpdump krb5-workstation vim \
   ncurses telnet ncurses-devel tcl net-tools \
- && yum groupinstall "Development Tools" -y \
- && yum update -y && yum clean all
+  && yum groupinstall "Development Tools" -y \
+  && yum update -y && yum clean all
 
 ENV KRB5_VER 1.16.1
 

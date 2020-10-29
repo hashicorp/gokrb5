@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM docker.mirror.hashicorp.services/centos:latest
 MAINTAINER Jonathan Turner <jt@jtnet.co.uk>
 
 EXPOSE 88
@@ -7,7 +7,7 @@ ENTRYPOINT ["/usr/sbin/krb5kdc", "-n"]
 RUN yum install -y \
   krb5-server \
   tcpdump krb5-workstation vim \
- && yum update -y && yum clean all
+  && yum update -y && yum clean all
 
 ADD krb5.conf /etc/krb5.conf
 ADD kdc.conf /var/kerberos/krb5kdc/kdc.conf

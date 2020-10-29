@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM docker.mirror.hashicorp.services/debian:latest
 MAINTAINER Jonathan Turner <jt@jtnet.co.uk>
 
 EXPOSE 53

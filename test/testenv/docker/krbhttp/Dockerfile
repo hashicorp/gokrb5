@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM docker.mirror.hashicorp.services/centos:latest
 MAINTAINER Jonathan Turner <jt@jtnet.co.uk>
 
 EXPOSE 80 443
